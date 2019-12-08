@@ -15,6 +15,8 @@ import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { BodyComponent } from './body/body.component';
+import { ListOfFlightsComponent } from './list-of-flights/list-of-flights.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     LoginComponent,
     RegisterSuccessComponent,
     HomeComponent,
-    AddPostComponent
+    AddPostComponent,
+    BodyComponent,
+    ListOfFlightsComponent
   ],
   imports: [
     BrowserModule,

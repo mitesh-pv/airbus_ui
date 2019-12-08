@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#">Title</a>
+    <ul class="navbar-nav mt-lg-0 ml-auto">
+      <div *ngIf="authService.isAuthenticated()" ><li class="nav-item-active"><a href="/add-post" class="nav-link">Add Post</a></li></div>
+      <li class="nav-item active"><a href="/login" class="nav-link">Login</a></li>
+      <li class="nav-item active"><a href="/register" class="nav-link">Register</a></li>
+    </ul>
+  </div>
+</div>
+</nav>

@@ -1,0 +1,30 @@
+<div class="d-flex  justify-content-center form-custom">
+    <form class="card p-4 bg-light" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <h5 class="card-title text-center ">Register Here</h5>
+        <div class="form-group row">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" [formControlName]="'username'" id="username" placeholder="Username">
+            </div>
+          </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" [formControlName]="'email'" id="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input type="password" class="form-control" [formControlName]="'password'" id="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group row">
+          <div class="col-sm-12">
+            <input type="password" class="form-control" [formControlName]="'confirmPassword'" id="confmPassword" placeholder="Confirm Password">
+          </div>
+        </div>
+      <div class="form-group row">
+        <div class=" col-sm-12">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>

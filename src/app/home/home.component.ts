@@ -16,15 +16,15 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.httpService.get("http://192.168.43.162:8081/api/showAirport").subscribe(
-      data => {
-        this.airports = data as String[];   
-        console.log(this.airports);
-      },
-      (err: HttpErrorResponse) => {
-        console.log("error getting value");
-      }
-    );
+    // this.httpService.get("http://192.168.43.162:8081/api/showAirport").subscribe(
+    //   data => {
+    //     this.airports = data as String[];   
+    //     console.log(this.airports);
+    //   },
+    //   (err: HttpErrorResponse) => {
+    //     console.log("error getting value");
+    //   }
+    // );
   }
 
 

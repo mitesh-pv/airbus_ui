@@ -17,6 +17,7 @@ import { AddPostComponent } from './add-post/add-post.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { BodyComponent } from './body/body.component';
 import { ListOfFlightsComponent } from './list-of-flights/list-of-flights.component';
+import { BookingDetailsComponent } from './booking-details/booking-details.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ListOfFlightsComponent } from './list-of-flights/list-of-flights.compon
     HomeComponent,
     AddPostComponent,
     BodyComponent,
-    ListOfFlightsComponent
+    ListOfFlightsComponent,
+    BookingDetailsComponent
   ],
   imports: [
     BrowserModule,
